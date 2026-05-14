@@ -1,0 +1,105 @@
+:root {
+  --bg-primary: #f0f4f8;
+  --surface: #FFE8BE;
+  --accent: #F7DD7D;
+  --brand: #427AB5;
+  --brand-hover: #346191;
+  --brand-secondary: #406AAF;
+  --text-main: #2C3E50;
+  --text-secondary: #5D6D7E;
+  --border: rgba(66, 122, 181, 0.15);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--text-main);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: var(--brand-secondary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-hover);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--brand);
+  border: 1px solid var(--brand);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand);
+  color: white;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-instock {
+  background-color: var(--brand);
+  color: white;
+}
+
+.status-deployed {
+  background-color: var(--brand-secondary);
+  color: white;
+}
+
+.status-maintenance {
+  background-color: var(--accent);
+  color: #856404;
+}
+
+.status-purple {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.status-gray {
+  background-color: #95a5a6;
+  color: white;
+}
